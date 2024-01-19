@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'header-color':'rgba(231, 111, 81, 0.10)',
+          }
+        }
+      }
+    }
+  </script>
+   
 </head>
 
 <body>
-    <header class="max-w-7xl mx-auto top-4">
+    <!-- <header class="max-w-7xl mx-auto top-4">
         <nav class="flex flex-col items-center  md:flex-row justify-between items-center">
             <div class="w-60  md:">
                 <img src="./icons/logo.png" alt="">
@@ -40,14 +55,160 @@
         <section>
             <div class="img-section">
                 <img src="./images/jacket-1.png" alt="">
-                <h2>Yellow Coat Jacket </h2>
+                <h2 class="text-4xl">Yellow Coat Jacket </h2>
                 <p>Lorem Ipsum is simply dummy text of the 
                     printing and typesetting industry.</p>
-                    <h1 class="text-slate-600 text-sm md:text-amber-500 text-4xl ">$234</h1>
+                    <h1 class="text-slate-600 md:text-amber-500 text-4xl ">$234</h1>
                     <button class="bg-lime-600 pt-4 pb-4 px-12 rounded-lg text-zinc-50">BUY NOW</button>
             </div>
         </section>
-    </main>
-  
+    </main> -->
+    <header class="max-w-7xl m-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                
+                    
+                        <ul class="p-2">
+                          <li><a>Home</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>News</a></li>
+                          <li><a>Contact</a></li>
+                        
+                  </div>
+                  <a class="text-4xl">Bike Dekho</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-black text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="">
+                  <a class="px-10 text-white font-bold btn btn-error">Button</a>
+                </div>
+              </div>
+
+        </nav>
+
+
+
+<!-- start -->
+<div class="carousel w-full mt-16 bg-header-color rounded-xl h-[530px]">
+    <div id="slide1" class="carousel-item relative w-full">
+        <!--  -->
+        <!-- leftside -->
+        <div class="flex flex-col text-center lg:text-left lg:flex-row  items-center pl-0 lg:pl-24 mt-12 lg:0">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold pb-5">Ride-on R15 V4 with Smile</h1>
+                <p class="pb-6">Amet minim mollit non deserunt ullamco 
+                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="px-10 text-white font-bold btn btn-error">Purchase</button>
+            </div>
+            <!-- left side end -->
+            <!-- right side -->
+            <div class="flex-1 mt-10 lg:0">
+                <img src="./images.bike/slider/bike1.png" alt="">
+
+            </div>
+            <!-- right side end -->
+        </div>
+      
+      <!--  -->
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <!--  -->
+        <!--  -->
+        <!-- leftside -->
+        <div class="flex items-center pl-24">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold pb-5">Ride-on R15 V4 with Smile</h1>
+                <p class="pb-6">Amet minim mollit non deserunt ullamco 
+                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="px-10 text-white font-bold btn btn-error">Purchase</button>
+            </div>
+            <!-- left side end -->
+            <!-- right side -->
+            <div class="flex-1">
+                <img src="./images.bike/slider/bike2.png" alt="">
+
+            </div>
+            <!-- right side end -->
+        </div>
+      
+      <!--  -->
+
+      <!--  -->
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+        <!--  -->
+        <!-- leftside -->
+        <div class="flex items-center pl-24">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold pb-5">Ride-on R15 V4 with Smile</h1>
+                <p class="pb-6">Amet minim mollit non deserunt ullamco 
+                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="px-10 text-white font-bold btn btn-error">Purchase</button>
+            </div>
+            <!-- left side end -->
+            <!-- right side -->
+            <div class="flex-1">
+                <img src="./images.bike/slider/bike3.png" alt="">
+
+            </div>
+            <!-- right side end -->
+        </div>
+      
+      <!--  -->
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+        <!--  -->
+        <!-- leftside -->
+        <div class="flex items-center pl-24">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold pb-5">Ride-on R15 V4 with Smile</h1>
+                <p class="pb-6">Amet minim mollit non deserunt ullamco 
+                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="px-10 text-white font-bold btn btn-error">Purchase</button>
+            </div>
+            <!-- left side end -->
+            <!-- right side -->
+            <div class="flex-1">
+                <img src="./images.bike/slider/bike1.png" alt="">
+
+            </div>
+            <!-- right side end -->
+        </div>
+      
+      <!--  -->
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+
+    </header>
 </body>
 </html>
